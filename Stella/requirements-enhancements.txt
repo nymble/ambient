@@ -1,0 +1,84 @@
+# Threat-Radar Enhancement Dependencies
+# Install with: pip install -r requirements-enhancements.txt
+
+# ============================================
+# Web Dashboard & API
+# ============================================
+fastapi==0.109.0              # Modern web framework
+uvicorn[standard]==0.27.0     # ASGI server
+websockets==12.0              # Real-time updates
+jinja2==3.1.3                 # Template engine
+python-multipart==0.0.6       # Form data support
+starlette==0.36.0            # ASGI framework
+
+# ============================================
+# Threat Intelligence APIs
+# ============================================
+requests==2.31.0              # HTTP library
+aiohttp==3.9.3               # Async HTTP
+httpx==0.26.0                # Modern HTTP client
+OTXv2==1.5.12                # AlienVault OTX SDK (optional)
+
+# ============================================
+# Data Processing & Analysis
+# ============================================
+pandas==2.2.0                 # Data manipulation
+numpy==1.26.3                # Numerical computing
+scipy==1.12.0                # Scientific computing
+
+# ============================================
+# Visualization & Charts
+# ============================================
+plotly==5.18.0               # Interactive charts
+matplotlib==3.8.2            # Static charts
+seaborn==0.13.2              # Statistical visualization
+
+# ============================================
+# Database & Caching
+# ============================================
+sqlalchemy==2.0.25           # SQL ORM
+alembic==1.13.1              # Database migrations
+redis==5.0.1                 # Caching (optional)
+diskcache==5.6.3             # Local disk cache
+
+# ============================================
+# Testing (for new features)
+# ============================================
+pytest-asyncio==0.23.3       # Async test support
+pytest-mock==3.12.0          # Mocking
+responses==0.24.1            # HTTP mocking
+faker==22.0.0                # Test data generation
+
+# ============================================
+# Additional AI Providers
+# ============================================
+# Grok/xAI support (when available)
+# anthropic==0.18.0          # Already in main requirements
+# openai==1.12.0             # Already in main requirements
+
+# ============================================
+# Frontend Build Tools (Optional)
+# ============================================
+# If building React/Vue frontend, install via npm:
+# npm install react react-dom @vitejs/plugin-react
+# npm install chart.js react-chartjs-2
+# npm install axios
+
+# ============================================
+# Security & Rate Limiting
+# ============================================
+slowapi==0.1.9               # Rate limiting
+python-jose[cryptography]==3.3.0  # JWT tokens
+passlib[bcrypt]==1.7.4       # Password hashing (if adding auth)
+
+# ============================================
+# Monitoring & Logging
+# ============================================
+prometheus-client==0.19.0    # Metrics export
+loguru==0.7.2                # Enhanced logging
+
+# ============================================
+# Total Size Estimate
+# ============================================
+# Approximately 150-200 MB installed
+# Compatible with Python 3.8+
